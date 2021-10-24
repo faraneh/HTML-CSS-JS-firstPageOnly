@@ -266,6 +266,10 @@ body{
     font-size: 0.8rem;
     line-height: 1rem;
     font-weight: 600;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
 }
 .planFinalBtn { 
     width: 120px;
@@ -485,6 +489,9 @@ body{
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .whereToGoRight { 
+        padding-right: 10px;
+    }
     .testimonials { 
         max-width: 70%;
         padding-top: 50px;
@@ -492,5 +499,8 @@ body{
     }
     .investors{
         max-width: 70%;
+    }
+    .planDesc { 
+        width: 60%;
     }
 }
