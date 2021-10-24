@@ -24,7 +24,7 @@ body{
     justify-content: center;
 }
 .bannerMainTitle { 
-    font-size: 7rem;
+    font-size: 4rem;
     font-weight: 900;
     color: orange;
 }
@@ -53,23 +53,25 @@ body{
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .plans { 
-    width: 70%;
-    height: 400px;
+    width: 90%;
+    height: fit-content;
     background: transparent;
     transform: translateY(-100px);
     margin: auto;
 }
 .plan { 
     background-color: rgba(233, 233, 233, 0.589);
-    height: 400px;
+    height: fit-content;
     border-radius: 15px;
-    background-color: white;
+    background-color: #eee;
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     text-align: center;
     justify-content: center;
     padding-top: 40px;
+    padding-bottom: 30px;
     color: rgb(255, 174, 23);
+    margin-bottom: 10px;
 }
 .plan h2 { 
     font-size: 2.5rem;
@@ -86,30 +88,34 @@ body{
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .whereToGo { 
-    width: 80%;
-    height: 600px;
-    background-color: #ccc;
+    max-width: 90%;
+    height: fit-content;
+    background-color: #aaa;
     margin: auto;
     border-radius: 15px;
     display: flex;
     flex-flow: row;
     flex-direction: row;
     margin-top: 50px;
+    padding-bottom: 30px;
 }
 .whereToGoLeft { 
-    width: 550px;
-    min-width: 550px;
-    height: 550px;
-    margin: 25px 25px 25px 40px;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto 0 auto 40px;
     background-size: cover;
     background-position: center;
-    border-radius: 3px;
+    display: none;
 }
 .whereToGoRight { 
-    width: fit-content;
-    height: 580px;
-    margin: 10px 30px 10px 10px;
-    padding: 30px;
+    max-width: 90%;
+    height: 100%;
+    margin: 10px auto;
+    padding: 40px 5px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
 }
 .whereToGoRight h2 { 
     font-size: 3.5rem;
@@ -117,13 +123,14 @@ body{
     color: white;
     text-shadow: 2px 2px 20px rgba(128, 128, 128, 0.856);
     margin: 30px 0 25px;;
+    word-wrap: break-word;
 }
 .whereToGoRight p { 
     line-height: 2rem;
 }
 
 .TourSelectBtn1 { 
-    width: 200px;
+    min-width: 200px;
     /* height: 60px; */
     background-color: rgb(255, 218, 149);
     color:rgb(0, 0, 70);
@@ -138,11 +145,12 @@ body{
     padding: 12px;
     box-sizing: border-box;
     transition: all 0.5s ease;
+    margin: 10px 5px;
 }
 
 
 .TourSelectBtn2 { 
-    width: 200px;
+    min-width: 200px;
     /* height: 60px; */
     background-color: rgb(255, 198, 92);
     color:rgb(0, 0, 70);
@@ -157,10 +165,11 @@ body{
     padding: 12px;
     box-sizing: border-box;
     transition: all 0.5s ease;
+    margin: 10px 5px;
 }
 
 .TourSelectBtn3 { 
-    width: 200px;
+    min-width: 200px;
     /* height: 60px; */
     background-color: rgb(255, 170, 11);
     color:rgb(0, 0, 70);
@@ -175,6 +184,7 @@ body{
     padding: 12px;
     box-sizing: border-box;
     transition: all 0.5s ease;
+    margin: 10px 5px;
 }
 
 .TourSelectBtn1:hover { 
@@ -223,7 +233,7 @@ body{
 
 .finalPlans { 
     padding : 10px 30px;
-    margin-top: 0;
+    margin-top: 10px;
     transform: translateY(-30px);
     display: none;
 }
@@ -231,6 +241,8 @@ body{
     color: rgba(231, 66, 0, 0.952);
     font-weight: 800;
     font-size: 3rem;
+    text-align: center;
+    justify-content: center;
 }
 .planTime {
     font-size: 0.8rem;
@@ -301,28 +313,33 @@ body{
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .investorTitle {
-    width: 100%;
+    width: 95%;
     font-size: 2.5rem;
     font-weight: 200;
     margin: 170px auto 0;
     text-align: center;
 }
 .investors{
-    width: 70%;
-    max-width: 70%;
+    max-width: 90%;
+    overflow-x: scroll;
     height: 120px;
     margin: 50px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+    flex-wrap:nowrap;
+}
+.investor { 
+    min-width: 80px;
+    margin: 20px;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .testimonials { 
-    width: 80%;
-    height: 700px;
+    max-width: 90%;
+    height: fit-content;
     background-color: rgba(146, 83, 0, 0.452);
     margin: auto;
     border-radius: 15px;
@@ -334,10 +351,10 @@ body{
 .testimonialBox { 
     width: 95%;
     text-align: center;
-    padding: 100px;
+    padding: 30px;
 }
 .testimonialBox img { 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .testimonialBox h3 { 
     margin-bottom: 40px;
@@ -351,6 +368,7 @@ body{
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .signIn { 
+    width: 95%;
     height: 500px;
     min-height: 500px;
     background-color: white;
@@ -359,7 +377,7 @@ body{
 .signBox { 
     height: 500px;
     border: 1px solid #ccc;
-    margin: 0 5px;
+    margin: 10px 5px;
     border-radius: 15px;
 }
 
@@ -378,7 +396,7 @@ body{
     font-weight: 300;
 }
 .signInForm input { 
-    width: 400px;
+    width: 80%;
     margin: 10px;
     height: 2.5rem;
     padding: 0 15px;
@@ -412,7 +430,7 @@ body{
     font-weight: 300;
 }
 .signUpForm input { 
-    width: 400px;
+    width: 80%;
     margin: 10px;
     height: 2.5rem;
     padding: 0 15px;
@@ -441,7 +459,7 @@ body{
 .footerLeftListUl {
     margin-left: 0;
     padding: 0;
-    display: flex;
+    display: none;
     flex-direction: row;
     width: fit-content;
 }
@@ -450,4 +468,29 @@ body{
     line-height: 3rem;
     justify-content: center;
     margin: 0 20px;
+}
+
+
+@media screen and (min-width: 1000px) { 
+    .whereToGoLeft { 
+        display : block;
+    }
+    .bannerMainTitle { 
+        font-size: 7rem;
+        font-weight: 900;
+        color: orange;
+    }
+    .whereToGo { 
+        width: 70%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .testimonials { 
+        max-width: 70%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .investors{
+        max-width: 70%;
+    }
 }
